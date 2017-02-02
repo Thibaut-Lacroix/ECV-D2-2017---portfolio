@@ -1,8 +1,71 @@
 body{
   margin: 0;
-  min-width: 550px;      /* 2x LC width + RC width */
   font-family: 'Open Sans', Helvetica,serif;
+}
+/*********** HEADER ***********/
+header {
+  width: 100%;
+  height:65px ;
   background-color: #fff;
+  position: fixed;
+  z-index: 3;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+
+
+nav {
+  max-width: 50rem;
+  /*padding-top: 16px;*/
+  height: 65px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  flex: 4.3;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+nav ul li {
+
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #1D1E3E;
+}
+
+.cool-link {
+    display: inline-block;
+    color: #50ADAD;
+    text-decoration: none;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #1D1E3E;
+    transition: width .3s;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    background: #1D1E3E;
+}
+
+.cool-link.active:after {
+    width: 100%;
+    background: #1D1E3E;
 }
 
 /*********** BG-IMG HOME ***********/
@@ -27,7 +90,6 @@ body{
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: linear-gradient(to top, #5BC3EB, #fff);
   opacity: .8;
 }
 
@@ -38,7 +100,7 @@ body{
 }
 
 .bg-img img {
-  margin-top: 40px;
+  margin-top: 100px;
   height: 450px;
 }
 
@@ -147,18 +209,11 @@ body{
 	animation: ani-mouse 3.5s linear infinite;
 }
 
-/*********** CONTAINER ***********/
-
-#container {
-  max-width: 1000px;
-  margin: 0 auto;
-}
 /*********** PREZ ***********/
 
 .text-presentation {
   height: 100vh;
   width: 100%;
-  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -221,70 +276,92 @@ body{
   margin: 0;
 }
 
-/*********** SKILLS ***********/
-.portfolio-area {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
 
-.portfolio-area h2,
-.fields h2,
+.portolio h2,
 .contact h2 {
-  margin-top: 0;
-  margin-bottom: 0;
   z-index: 2;
   font-size: 64px;
-  color: #1D1E3E;
+  color: red;
+  padding-top: 100px;
   text-align: center;
 }
 
-.container-portfolio-items {
-  width: 80%;
+
+/*********** PORTFOLIO ***********/
+
+
+.portolio {
+  height: 100%;
+}
+.box-container {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-}
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0;
 
-.container-portfolio-items li {
-  width: 150px;
-  height: 150px;
+}
+.box-container li {
   list-style: none;
+}
+.box-container li a{
+  width: 200px;
+  height: 200px;
   background-color: red;
-  margin: 10px;
+  transition: ease 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+}
+
+.box-container li a p {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #fff;
 }
 
 
+.box-container li a:hover {
+  opacity: .5;
+  transition: ease 1s;
+}
 
 /*********** CONTACT ***********/
 
 .contact {
-  height: 90vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact h2 {
   margin: 0;
+  padding-top: 0;
 }
 
-.contact .form-section {
-  margin: auto;
+/*.contact .form-section {
+  margin: 0 10%;
   display: flex;
   justify-content: space-around;;
   align-items: center;
-}
+}*/
 
 .form-section{
-  width: 860px;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
 }
 #contact-area {
-	width: 600px;
+	width: 100%;
 	margin-top: 25px;
+  max-width: 600px;
 }
 
 #contact-area form {
@@ -292,22 +369,25 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 #contact-area form div {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 #contact-area input, #contact-area textarea {
 	padding: 5px;
-	width: 471px;
+	/*width: 100%;*/
 	font-family: Helvetica, sans-serif;
 	font-size: 1.4em;
 	margin: 0px 0px 10px 0px;
-	border: 2px solid #1D1E3E;
-  background-color: #fff;
-  color: #1D1E3E;
+	border: 2px solid red;
+  background-color: #5BC3EB;
+  color: red;
   transition: ease 0.5s;
 
 }
@@ -317,9 +397,9 @@ body{
 }
 
 #contact-area textarea:focus, #contact-area input:focus {
-	border: 2px solid #1D1E3E ;
-  color: #fff;
-  background-color: #1D1E3E;
+	border: 2px solid red ;
+  color: #5BC3EB;
+  background-color: red;
   transition: ease 0.5s;
 
 }
@@ -328,13 +408,13 @@ body{
   transition: ease 0.5s;
 	width: 100px;
 	float: right;
-  color: #1D1E3E;
+  color: red;
 }
 
 #contact-area input.submit-button:hover {
   transition: ease 0.5s;
-  color: #fff;
-  background-color: #1D1E3E;
+  color: #5BC3EB;
+  background-color: red;
 }
 
 label {
@@ -343,7 +423,7 @@ label {
 	width: 100px;
 	padding-top: 5px;
 	font-size: 16px;
-  color: #1D1E3E;
+  color: red;
   /*opacity: .7;*/
   letter-spacing: .5px;
 }
@@ -387,8 +467,8 @@ button:focus {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: #fff;
-  border: 2px solid #fff;
+  color: red;
+  border: 2px solid red;
   margin-top: 25px;
   transition: ease .5s;
 
@@ -396,7 +476,70 @@ button:focus {
 
 .thankyou a:hover {
   color: #5BC3EB;
-  background-color: #fff;
+  background-color: red;
   transition: ease .5s;
-  border: 2px solid #fff;
+  border: 2px solid red;
+}
+
+
+input[type='submit']{
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+}
+
+@media screen and (max-width: 820px){
+  header {
+    display: none;
+  }
+
+  #prez {
+    height: 100%;
+  }
+
+  #portolio {
+    height: 70vh;
+  }
+
+}
+
+
+@media screen and (max-width: 500px){
+  .text-presentation-bg h2 {
+    text-align: center;
+    font-size: 32px;
+  }
+  .text-presentation p{
+    font-size: 18px;
+  }
+ .icon-container {
+   margin-bottom: 20px;
+   margin-top: 15px;
+   justify-content: center;
+   flex-wrap: wrap;
+   width: 320px;
+ }
+ .icon-container img {
+   width: 30px;
+   height: 30px;
+   margin: 5px 10px;
+ }
+ .bg-img img {
+   height: auto;
+ }
+ .bg-img p {
+   font-size: 16px;
+ }
+ #portolio {
+   height: 100%;
+ }
+ .prez-img{
+  flex-direction: column;
+ }
+
+
+ #contact-area form {
+   margin-left: 10%;
+   margin-right: 10%;
+ }
 }
