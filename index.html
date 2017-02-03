@@ -64,7 +64,7 @@
       </div>
 
       <div id="portolio" class="portolio">
-        <h2>Portolio</h2>
+        <h4>Portolio</h4>
           <ul class="box-container">
             <li>
               <a href="#modal-1" class="cd-modal-trigger">
@@ -78,13 +78,26 @@
             </li>
             <div class="cd-modal" id="modal-1">
             	<div class="modal-content">
-            		<h2>My Modal Content</h2>
+                <div class="header-modal m-1">
+                  <span class="scroll-btn scroll-btn-modal">
+                    <a href="#prez">
+                      <span class="mouse">
+                        <span>
+                        </span>
+                      </span>
+                    </a>
+                  </span> <!-- scroll-btn END -->
+                </div> <!-- header-modal m-1 END -->
+                <h5>SYNAPS-T</h5>
+                <h6>Interactive Game Table</h6>
+                <img src="" alt="">
             		<p>
-            			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad modi repellendus, optio eveniet eligendi molestiae? Fugiat, temporibus! A rerum pariatur neque laborum earum, illum voluptatibus eum voluptatem fugiat, porro animi tempora? Sit harum nulla, nesciunt molestias, iusto aliquam aperiam est qui possimus reprehenderit ipsam ea aut assumenda inventore iste! Animi quaerat facere repudiandae earum quisquam accusamus tempora, delectus nesciunt, provident quae aliquam, voluptatum beatae quis similique in maiores repellat eligendi voluptas veniam optio illum vero! Eius, dignissimos esse eligendi veniam.
+                  Nowadays, it is becoming more and more <strong>difficult to dispense with his phone.</strong> With friends, in the restaurant or around a drink, who never pulled out his smartphone to pass, in the end, more time with eyes on the device than in those of the person opposite?
+                  This project is based on the creation of an <strong>interactive game table</strong> with the aim of putting the <strong>screen at the heart of our social relations.</strong> Thanks to the theme of the game present since our childhood, this connected table aims to get the user of his smartphone for a <strong>moment of sharing</strong> and thus privilege social relations, communication and <strong>collective play</strong>.
             		</p>
-            		<p>
-            			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad modi repellendus, optio eveniet eligendi molestiae? Fugiat, temporibus! A rerum pariatur neque laborum earum, illum voluptatibus eum voluptatem fugiat, porro animi tempora? Sit harum nulla, nesciunt molestias, iusto aliquam aperiam est qui possimus reprehenderit ipsam ea aut assumenda inventore iste! Animi quaerat facere repudiandae earum quisquam accusamus tempora, delectus nesciunt, provident quae aliquam, voluptatum beatae quis similique in maiores repellat eligendi voluptas veniam optio illum vero! Eius, dignissimos esse eligendi veniam.
-            		</p>
+                <div class="iframe-container">
+                  <iframe src="https://player.vimeo.com/video/196291018" width="640" height="360" frameborder="0"></iframe>
+                </div>
             	</div> <!-- .modal-content -->
             	<a href="#0" class="modal-close">Close</a>
             </div> <!-- .cd-modal -->
@@ -126,7 +139,7 @@
       </div>
 
       <div id="contact" class="contact">
-        <h2>Contact</h2>
+        <h4>Contact</h4>
         <!--<div class="form-section">-->
 
             <div id="contact-area">
@@ -164,8 +177,12 @@
     <!-- LINK -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script type="text/javascript" src="js/smoothscroll.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="jquery.fitvids.js"></script>
+    <script>
+      // Basic FitVids Test
+      $(".iframe-container").fitVids();
+    </script>
 
   </body>
 </html>
