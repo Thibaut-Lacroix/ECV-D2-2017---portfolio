@@ -378,25 +378,101 @@ nav ul li a {
 .cd-modal h5 {
   font-size: 64px;
   font-weight: 700;
+  margin-top: 100px;
+  opacity: .8;
 }
 .cd-modal h6 {
   font-size: 18px;
   font-weight: 300;
-  opacity: .9;
+  opacity: .3;
 }
 .cd-modal p {
-  margin: 50px auto;
+  margin: 20px auto 50px auto;
+  border-top: 3px solid rgba(255,255,255,0.1);
+  padding-top: 30px;
   z-index: 2;
   /*margin: 30px 50px 0px 50px;*/
   color: #fff;
   font-size: 21px;
-  line-height: 1.58;
+  line-height: 1.75;
   max-width: 900px;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 .cd-modal p:last-child {
   margin-bottom: 100px;
 }
+
+.cd-modal .infos-project {
+  margin: 30px auto 0 auto;
+  border-top: 3px solid rgba(255,255,255,0.1);
+  padding-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;;
+  max-width: 900px;
+}
+.cd-modal .infos-project .date-project,
+.cd-modal .infos-project .software-project {
+}
+
+.cd-modal .infos-project p:first-child {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  opacity: .7;
+}
+
+.cd-modal .infos-project p:last-child {
+  font-size: 18px;
+}
+
+.cd-modal .infos-project p {
+  margin: 0;
+  padding: 0;
+  border-top: none;
+}
+
+.cd-modal .infos-project p a {
+  opacity: .8;
+  color: white;
+  position: relative;
+  text-decoration: none;
+  padding: 5px 0;
+  color: #fff;
+  transition: ease .3s;
+}
+
+.cd-modal .infos-project p a:hover {
+  opacity: 1;
+  transition: ease .3s;
+}
+
+.cd-modal .infos-project p a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transform: scaleX(0.1);
+  transform-origin: bottom left;
+  transition: transform 0.3s;
+}
+.cd-modal .infos-project p a:hover:after {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+
+.cd-modal .infos-project .software-project img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  margin-top: 7px;
+}
+
 .cd-modal .modal-close {
   /* 'X' icon */
   position: absolute;
@@ -474,6 +550,14 @@ nav ul li a {
     /*font-size: 2rem;*/
   }
 }
+  #bg-modal-1 {
+  background: url('../img/portfolio/synaps-t/Synaps-T.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  }
 
   #modal-1 {
   background-color: #8111B3;
@@ -481,7 +565,11 @@ nav ul li a {
 
   .iframe-container {
     width: 100%;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 50px;
   }
   .iframe-container iframe {
     margin: 0 auto;
@@ -554,13 +642,17 @@ Scrub Effect
 }
 .scrub-transition .cd-modal .modal-close::before,
 .scrub-transition .cd-modal .modal-close::after {
-  background: #ffffff;
+  background: #8111B3;
 }
 .scrub-transition .cd-modal .modal-close {
-  background: #543254;
+  background: #fff;
+  opacity: .4;
+  transition: ease .3s;
 }
 .scrub-transition .cd-modal .modal-close:hover {
-  background: #452945;
+  background: #fff;
+  opacity: .9;
+  transition: ease .3s;
 }
 .scrub-transition .cd-transition-layer .bg-layer {
   /* sprite composed of 25 frames */
