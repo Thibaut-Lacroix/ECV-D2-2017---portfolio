@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Parallax scene with CSS variables</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- <img class="scene" data-modifier="6" src="img/5.png">
+  <img class="scene" data-modifier="0" src="img/6.png">
+  <img class="scene" data-modifier="-10" src="img/7.png">
+  <img class="scene" data-modifier="8" src="img/4.png">
+  <img class="scene" data-modifier="-5" src="img/3.png">
+  <img class="scene" data-modifier="10" src="img/1.png">
+  <img class="scene" data-modifier="0" src="img/2.png"> -->
+
+  <picture>
+   <source srcset="img/5.png" media="(min-width: 1025px)">
+   <source srcset="img/5-1024px.png" media="(min-width: 769px)">
+   <source srcset="img/5-768px.png" media="(max-width: 768px)">
+   <!-- <source srcset="img/5-480px.png" media="(max-width: 480px)">
+   <source srcset="img/5-320px.png" media="(max-width: 320px)"> -->
+   <img class="scene" data-modifier="6" src="img/5.png" alt="background-animation">
+  </picture>
+
+  <picture>
+   <source srcset="img/6.png" media="(min-width: 1025px)">
+   <source srcset="img/6-1024px.png" media="(min-width: 769px)">
+   <source srcset="img/6-768px.png" media="(max-width: 768px)">
+   <img class="scene" data-modifier="0" src="img/6.png" alt="background-animation">
+  </picture>
+
+  <picture>
+   <source srcset="img/7.png" media="(min-width: 1025px)">
+   <source srcset="img/7-1024px.png" media="(min-width: 769px)">
+   <source srcset="img/7-768px.png" media="(max-width: 768px)">
+   <img class="scene" data-modifier="-10" src="img/7.png" alt="background-animation">
+  </picture>
+
+  <picture>
+   <source srcset="img/4.png" media="(min-width: 1025px)">
+   <source srcset="img/4-1024px.png" media="(min-width: 769px)">
+   <source srcset="img/4-768px.png" media="(max-width: 768px)">
+   <img class="scene" data-modifier="8" src="img/4.png" alt="background-animation">
+  </picture>
+
+  <picture>
+   <source srcset="img/3.png" media="(min-width: 1025px)">
+   <source srcset="img/3-1024px.png" media="(min-width: 769px)">
+   <source srcset="img/3-768px.png" media="(max-width: 768px)">
+   <img class="scene" data-modifier="-5" src="img/3.png" alt="background-animation">
+  </picture>
+
+  <picture>
+   <source srcset="img/1.png" media="(min-width: 1025px)">
+   <source srcset="img/1-1024px.png" media="(min-width: 769px)">
+   <source srcset="img/1-768px.png" media="(max-width: 768px)">
+   <img class="scene" data-modifier="10" src="img/1.png" alt="background-animation">
+  </picture>
+
+  <picture>
+   <source srcset="img/2.png" media="(min-width: 1025px)">
+   <source srcset="img/2-1024px.png" media="(min-width: 769px)">
+   <source srcset="img/2-768px.png" media="(max-width: 768px)">
+   <img class="scene" data-modifier="0" src="img/2.png" alt="background-animation">
+  </picture>
+
+  <script src='https://s.electerious.com/basicScroll/dist/basicScroll.min.js'></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
