@@ -4,6 +4,7 @@
         <meta charset="utf-8" />
         <title>Thibaut Lacroix</title>
         <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
         <link rel="icon" type="image/png" href="img/favicon.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,8 +23,59 @@
         </ul>
       </nav>
     </header> -->
-    <div class="bg-img" id="home">
-      <img src="img/illu-tibo-home.svg" alt="image Thibaut"/>
+<div class="bg-img" id="home">
+  <picture>
+   <source srcset="img/parallax-assets/5.png" media="(min-width: 1025px)">
+   <source srcset="img/parallax-assets/5-1024px.png" media="(min-width: 769px)">
+   <source srcset="img/parallax-assets/5-768px.png" media="(max-width: 768px)">
+   <!-- <source srcset="img/5-480px.png" media="(max-width: 480px)">
+   <source srcset="img/5-320px.png" media="(max-width: 320px)"> -->
+   <img class="scene" data-modifier="6" src="img/parallax-assets/5.png" alt="background-animation">
+  </picture>
+
+  <picture>
+   <source srcset="img/parallax-assets/6.png" media="(min-width: 1025px)">
+   <source srcset="img/parallax-assets/6-1024px.png" media="(min-width: 769px)">
+   <source srcset="img/parallax-assets/6-768px.png" media="(max-width: 768px)">
+   <img class="scene" data-modifier="0" src="img/parallax-assets/6.png" alt="background-animation">
+  </picture>
+
+  <picture>
+   <source srcset="img/parallax-assets/7.png" media="(min-width: 1025px)">
+   <source srcset="img/parallax-assets/7-1024px.png" media="(min-width: 769px)">
+   <source srcset="img/parallax-assets/7-768px.png" media="(max-width: 768px)">
+   <img class="scene" data-modifier="-10" src="img/parallax-assets/7.png" alt="background-animation">
+  </picture>
+
+  <picture>
+   <source srcset="img/parallax-assets/4.png" media="(min-width: 1025px)">
+   <source srcset="img/parallax-assets/4-1024px.png" media="(min-width: 769px)">
+   <source srcset="img/parallax-assets/4-768px.png" media="(max-width: 768px)">
+   <img class="scene" data-modifier="8" src="img/parallax-assets/4.png" alt="background-animation">
+  </picture>
+
+  <picture>
+   <source srcset="img/parallax-assets/3.png" media="(min-width: 1025px)">
+   <source srcset="img/parallax-assets/3-1024px.png" media="(min-width: 769px)">
+   <source srcset="img/parallax-assets/3-768px.png" media="(max-width: 768px)">
+   <img class="scene" data-modifier="-5" src="img/parallax-assets/3.png" alt="background-animation">
+  </picture>
+
+  <picture>
+   <source srcset="img/parallax-assets/1.png" media="(min-width: 1025px)">
+   <source srcset="img/parallax-assets/1-1024px.png" media="(min-width: 769px)">
+   <source srcset="img/parallax-assets/1-768px.png" media="(max-width: 768px)">
+   <img class="scene" data-modifier="10" src="img/parallax-assets/1.png" alt="background-animation">
+  </picture>
+
+  <picture>
+   <source srcset="img/parallax-assets/2.png" media="(min-width: 1025px)">
+   <source srcset="img/parallax-assets/2-1024px.png" media="(min-width: 769px)">
+   <source srcset="img/parallax-assets/2-768px.png" media="(max-width: 768px)">
+   <img class="scene" data-modifier="0" src="img/parallax-assets/2.png" alt="background-animation">
+  </picture>
+
+
       <h1>Welcome here !</h1>
       <p>Let's scroll to see funky things about me</p>
       <span class="scroll-btn">
@@ -34,7 +86,7 @@
           </span>
         </a>
       </span>
-    </div>
+    </div> <!-- BG home -->
 
     <div id="container">
 
@@ -131,7 +183,7 @@
               </a>
             </span> <!-- scroll-btn END -->
           </div> <!-- header-modal m-1 END -->
-          <div class="">
+          <div class="modal-padding">
             <h5>SYNAPS-T</h5>
             <h6>Interactive Game Table</h6>
             <div class="infos-project">
@@ -158,7 +210,7 @@
             <div class="iframe-container">
               <iframe src="https://player.vimeo.com/video/196291018" width="640" height="360" frameborder="0"></iframe>
             </div>
-          </div>
+          </div> <!-- modal-padding -->
         </div> <!-- .modal-content -->
         <a href="#0" class="modal-close">Close</a>
       </div> <!-- .cd-modal -->
@@ -202,6 +254,15 @@
   <footer>
     <div class="footer-container">
       <h4>Contact</h4>
+      <div class="infos-perso">
+        <div class="mail">
+          <img src="" alt=""/>
+          <p></p>
+        </div>
+        <div class="tel">
+
+        </div>
+      </div>
       <div class="icons-social">
         <a href="#"><img src="" alt=""><p>Dribbble</p></a>
         <a href="#"><img src="" alt=""><p>Twitter</p></a>
@@ -211,6 +272,8 @@
 
   </footer>
     <!-- LINK -->
+    <script src='https://s.electerious.com/basicScroll/dist/basicScroll.min.js'></script>
+    <script src="js/index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/jquery.fitvids.js"></script>
