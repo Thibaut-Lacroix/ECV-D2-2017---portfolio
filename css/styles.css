@@ -295,12 +295,11 @@ body{
 }
 
 
-.portfolio h4,
-footer h4 {
+.portfolio h4 {
   z-index: 2;
   font-size: 64px;
-  color: #1D1E3E;
-  padding-top: 100px;
+  color: #fff;
+  padding-top: 150px;
   margin-bottom: 50px;
   text-align: center;
 }
@@ -308,12 +307,12 @@ footer h4 {
 .portfolio h4:after,
 .contact h4:after {
   content: '';
-  height: 5px;
+  height: 3px;
   width: 100px;
-  background-color: #1D1E3E;
+  background-color: #fff;
   display: block;
   margin: 0 auto;
-  opacity: .8;
+  opacity: .6;
 }
 
 
@@ -323,10 +322,24 @@ footer h4 {
 
 .portfolio {
   height: 100%;
-  padding-bottom: 150px;
+  padding-bottom: 100px;
   /*background: linear-gradient( 180deg, white, white 20%, #E9BD3A 80% );*/
-  background-image: linear-gradient(to bottom, #fff 50%, #E9BD3A 100%);
-
+  /*background-image: linear-gradient(to bottom, #fff 10%, #E9BD3A 15%);*/
+  position: relative;
+  background-color: #E9BD3A;
+}
+.portfolio::after {
+  content: '';
+  position: absolute;
+  width: 100vw;
+  height: 20%;
+  top: -100px;
+  left: 0;
+  z-index: 0;
+  display: block;
+  background-image: url('../img/bg-portfolio.png');
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .box-container {
@@ -334,18 +347,19 @@ footer h4 {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0;
 
 }
 .box-container li {
   list-style: none;
-  height: 250px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
   margin:10px;
   position: relative;
-  border-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
   background-color: rgb(255,255,255);
   /*background-color: rgba(244,243 , 245, 0.8);*/
   box-shadow: 0 1px 3px rgba(30,29,62,0), 0 1px 2px rgba(30,29,62,0);
@@ -357,15 +371,17 @@ footer h4 {
 }
 
 .box-container li a{
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   background-color: red;
   transition: ease 1s;
   display: flex;
   justify-content: center;
   align-items: flex-end;;
-  margin: 0 10px 10px 0;
+  /*margin: 0 10px 10px 0;*/
   text-decoration: none;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .box-container li a p {
@@ -374,20 +390,31 @@ footer h4 {
   text-decoration: none;
   color: #fff;
   position: absolute;
-  color: #1D1E3E;
+  color: #fff;
+}
+
+.text-modal {
+  background-color: rgba(46,24,50,0.7);
+  width: 100%;
+  height: 60px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 .name-modal {
-  bottom: 22px;
-  left: 15px;
+  bottom: 29px;
+  font-size: 18px;
+  left: 20px;
   font-weight: bold;
-  opacity: .8;
+  /* opacity: .9; */
+  letter-spacing: .5px;
 }
 .cat-modal {
-  bottom: 7px;
-  left: 15px;
-  font-size: 12px;
-  font-weight: 500;
-  opacity: .6;
+  bottom: 12px;
+  left: 20px;
+  font-size: 13px;
+  font-weight: 300;
+  opacity: .8;
+  letter-spacing: .4px;
 }
 
 
@@ -623,8 +650,8 @@ footer h4 {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   }
 
   #modal-1 {
@@ -887,9 +914,15 @@ button:focus {
 
 footer {
   background-color: #E9BD3A;
+  height: 100%;
+  width: 100%;
+  display: flex!important;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
 }
 
-.footer-container {
+/*.footer-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -901,7 +934,7 @@ footer {
 
 footer h4 {
   color:#fff;
-}
+}*/
 
 
 /*.icons-social:before {
@@ -929,6 +962,7 @@ footer h4 {
   justify-content: center;
   align-items:center;
   flex-direction: column;
+  text-decoration: none;
 }
 
 .icons-social a img {
@@ -939,7 +973,7 @@ footer h4 {
 }
 
 .icons-social a p {
-  color: #fff;
+  color: black;
 }
 
 /********** THANK YOU *************/
@@ -1066,8 +1100,7 @@ input[type='submit']{
 
 
 @media screen and (max-width: 480px){
-  .portfolio h4,
-  footer h4 {
+  .portfolio h4, {
     font-size: 48px;
     margin-bottom: 50px;
   }
