@@ -323,7 +323,7 @@ body{
 
 .portfolio {
   height: 100%;
-  padding-bottom: 100px;
+  padding-bottom: 75px;
   /*background: linear-gradient( 180deg, white, white 20%, #E9BD3A 80% );*/
   /*background-image: linear-gradient(to bottom, #fff 10%, #E9BD3A 15%);*/
   position: relative;
@@ -934,44 +934,6 @@ footer h4 {
 }*/
 
 
-/*.icons-social:before {
-  content: '';
-  width: 100%;
-  height: 3px;
-  background-color: #fff;
-  opacity: .7;
-
-}*/
-
-.icons-social {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: center;
-  text-decoration: none;
-  width: 275px;
-  border-top: 2px solid #fff;
-  padding-top: 30px;
-}
-
-.icons-social a {
-  display: flex;
-  justify-content: center;
-  align-items:center;
-  flex-direction: column;
-  text-decoration: none;
-}
-
-.icons-social a img {
-  background-color: red;
-  display: block;
-  width: 50px;
-  height:50px;
-}
-
-.icons-social a p {
-  color: black;
-}
 
 @font-face {
   font-family: 'icomoon';
@@ -985,24 +947,32 @@ footer h4 {
 }
 
 .social-networks {
-  margin: 10px 0 35px;
-  padding: 0;
-  font-size: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  max-width: 940px;
+  width: 75%;
+  border-top: 2px solid rgba(255,255,255,0.4);
+  padding: 30px 0px 0px 0px;
+  margin: 10px 0 35px 0;
+  /*padding: 0;*/
+  /*font-size: 0;*/
   text-align: center;
+
 }
 .social-networks li {
   display: inline-block;
 }
 .social-networks a {
-  display: block;
-  position: relative;
-  margin: 0 7px;
-  width: 30px;
-  height: 30px;
-  font-size: 0;
-  line-height: 0;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
   text-decoration: none;
+  width: 50px;
+  height: 50px;
 }
 .social-networks a:before {
   content: "";
@@ -1029,7 +999,7 @@ footer h4 {
   line-height: 1;
   opacity: .5;
   color: black;
-  font-size: 20px;
+  font-size: 30px;
   line-height: 30px;
 }
 .social-networks a:hover, .social-networks a:focus {
@@ -1039,6 +1009,10 @@ footer h4 {
 .social-networks.bounce a:hover, .social-networks.bounce a:focus {
   -webkit-animation: bounce 1s;
           animation: bounce 1s;
+}
+
+.social-networks a p {
+  color: black;
 }
 
 
@@ -1058,6 +1032,18 @@ footer h4 {
   content: "\e900";
 }
 .social-networks .icon-dribbble:hover:before, .social-networks .icon-dribbble:focus:before {
+  background: #fff;
+}
+.social-networks .icon-email:after {
+  content: "\e903";
+}
+.social-networks .icon-email:hover:before, .social-networks .icon-email:focus:before {
+  background: #fff;
+}
+.social-networks .icon-twitter:after {
+  content: "\e904";
+}
+.social-networks .icon-twitter:hover:before, .social-networks .icon-twitter:focus:before {
   background: #fff;
 }
 
