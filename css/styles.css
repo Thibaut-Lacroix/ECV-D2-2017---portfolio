@@ -122,7 +122,7 @@ body{
   opacity: .7;
 	width: 35px;
 	height: 55px;
-	margin: 0 auto 60px;
+	margin: 0 auto 30px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -489,20 +489,47 @@ body{
   max-width: 1400px;
   margin: 0 auto;
   height: 100vh;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+.header-1{
+  background: url(../img/portfolio/deviceLab/devicelab.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 10%;
+}
 .header-2{
   background: url(../img/portfolio/synaps-t/presentation.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 10%;
+}
+.header-3{
+  background: url(../img/portfolio/django/django.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .header-4{
-  background: url(../img/portfolio/django/django.gif);
+  background: url(../img/portfolio/synaps-t/presentation.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.header-5{
+  background: url(../img/portfolio/synaps-t/presentation.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.header-6{
+  background: url(../img/portfolio/synaps-t/presentation.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .scroll-btn-modal {
   margin-top: 40%;
@@ -525,24 +552,54 @@ body{
 }
 .cd-modal p {
   margin: 20px auto 50px auto;
-  border-top: 2px solid rgba(255,255,255,0.2);
+  border-top: 2px solid rgba(29,32,62,0.2);
   padding-top: 30px;
   z-index: 2;
   /*margin: 30px 50px 0px 50px;*/
-  color: #fff;
   font-size: 21px;
   line-height: 1.8;
   letter-spacing: .3px;
   max-width: 900px;
   opacity: 0.8;
 }
+
+
+
+.cd-modal-1 p,
+.cd-modal-1 h5,
+.cd-modal-1 h6,
+.cd-modal-3 p,
+.cd-modal-3 h5,
+.cd-modal-3 h6,
+.cd-modal-4 p,
+.cd-modal-4 h5,
+.cd-modal-4 h6,
+.cd-modal-5 p,
+.cd-modal-5 h5,
+.cd-modal-5 h6,
+.cd-modal-6 p,
+.cd-modal-6 h5,
+.cd-modal-6 h6, {
+  color: #1D1E3E;
+}
+.cd-modal-2 p,
+.cd-modal-2 h5,
+.cd-modal-2 h6 {
+  color: #fff;
+}
+.cd-modal-2 .txt-project,
+.cd-modal-2 .infos-project {
+  border-top: 2px solid rgba(255,255,255,0.2)!important;
+}
+
+
 .cd-modal p:last-child {
   margin-bottom: 100px;
 }
 
 .cd-modal .infos-project {
   margin: 30px auto 0 auto;
-  border-top: 2px solid rgba(255,255,255,0.2);
+  border-top: 2px solid rgba(29,32,62,0.2);
   padding-top: 20px;
   width: 100%;
   display: flex;
@@ -600,6 +657,7 @@ body{
   transform-origin: bottom left;
   transition: transform 0.3s;
 }
+
 .cd-modal .infos-project p a:hover:after {
   transform-origin: bottom left;
   transform: scaleX(1);
@@ -610,6 +668,86 @@ body{
   height: 20px;
   margin-right: 5px;
   margin-top: 7px;
+}
+
+.gif-portfolio,
+.img-portfolio {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  margin : 0 auto;
+}
+
+.p-before-invision-link {
+  margin-top: 75px!important;
+}
+.invision-link {
+  max-width: 900px;
+  width: 100%;
+  margin:0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+.invision-link a {
+  width: 250px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: .5s ease;
+}
+.invision-link a:hover {
+  -ms-transform: scale(1..05);
+  -moz-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: .5s ease;
+}
+.invision-link a img {
+  width:150px;
+}
+.invision-link a p {
+  border: none;
+  color: #1D1E3E;
+  padding-top: 10px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+.back-btn-proto {
+  text-decoration: none!important;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+  display: flex;
+  width: 220px;
+  height: 60px;
+  border: 3px solid #fff;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  transition: .5s ease;
+}
+.back-btn-proto:hover {
+  background-color: #fff;
+  color: #1D1E3E;
+  transition: .5s ease;
+  text-decoration: none!important;
+}
+.dark-back-btn-proto {
+  border: 3px solid #1D1E3E;
+  color: #1D1E3E;
+  transition: .5s ease;
+}
+.dark-back-btn-proto:hover{
+  transition: .5s ease;
+  color: #fff;
+  background-color: #1D1E3E;
 }
 
 .cd-modal .modal-close {
@@ -755,7 +893,7 @@ Scrub Effect
 
 -------------------------------- */
 .scrub-transition {
-  color: #2c1a32;
+  color: #1D1E3E;
 }
 .scrub-transition h1, .scrub-transition h2 {
 }
@@ -767,25 +905,51 @@ Scrub Effect
 .scrub-transition .cd-main-content {
   background: #ffbc59;
 }
-.scrub-transition .cd-modal {
+.scrub-transition .cd-modal-1,
+.scrub-transition .cd-modal-3,
+.scrub-transition .cd-modal-4,
+.scrub-transition .cd-modal-5,
+.scrub-transition .cd-modal-6 {
+  background-color: #fff;
+}
+.scrub-transition .cd-modal-2 {
   background: #633b63;
 }
-.scrub-transition .cd-modal .modal-content {
+.scrub-transition .cd-modal .modal-content-1,
+.scrub-transition .cd-modal .modal-content-3,
+.scrub-transition .cd-modal .modal-content-4,
+.scrub-transition .cd-modal .modal-content-5,
+.scrub-transition .cd-modal .modal-content-6, {
+  color: #ffffff;
+}
+.scrub-transition .cd-modal .modal-content-2 {
   color: #ffffff;
 }
 .scrub-transition .cd-modal .modal-close::before,
 .scrub-transition .cd-modal .modal-close::after {
-  background: #8111B3;
-}
-.scrub-transition .cd-modal .modal-close {
   background: #fff;
   opacity: .6;
-  transition: ease .3s;
+}
+.scrub-transition .cd-modal .modal-close {
+  background: #1D1E3E;
+  opacity: .6;
+  transition: ease .5s;
 }
 .scrub-transition .cd-modal .modal-close:hover {
+  opacity: .8;
+  transition: ease .5s;
+}
+.scrub-transition .cd-modal-2 .modal-close {
+  background: #fff;
+}
+.scrub-transition .cd-modal-2 .modal-close:hover {
   background: #fff;
   opacity: .8;
-  transition: ease .3s;
+}
+.scrub-transition .cd-modal-2 .modal-close::before,
+.scrub-transition .cd-modal-2 .modal-close::after {
+  background: #8111B3;
+  opacity: .6;
 }
 .scrub-transition .cd-transition-layer .bg-layer {
   /* sprite composed of 25 frames */
