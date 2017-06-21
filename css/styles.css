@@ -707,7 +707,7 @@ body{
   transition: .5s ease;
 }
 .invision-link a img {
-  width:150px;
+  width:100px;
 }
 .invision-link a p {
   border: none;
@@ -1197,11 +1197,31 @@ footer {
  .bg-img {
    height: 100vh;
  }
+ .bg-img h1 {
+   font-size: 24px;
+ }
  .bg-img p {
    font-size: 16px;
+   padding: 0px 50px;
+   line-height: 22px;
+   text-align: center;
  }
+.scroll-btn .mouse{
+  width: 30px;
+  height: 45px;
+}
+.text-presentation-bg h2 {
+  font-size: 24px;
+  line-height: 34px;
+}
+.text-presentation-bg h3 {
+  font-size: 16px;
+}
  #portfolio {
    height: 100%;
+ }
+ .portfolio::after {
+   top:-30px;
  }
 
  .prez-img{
@@ -1211,7 +1231,12 @@ footer {
  .cd-modal .infos-project {
    justify-content: center;
    flex-flow: row wrap;
+   flex-direction: column;
  }
+
+ .modal-padding h5 {
+    font-size: 32px;
+  }
 
  .date-project{
    margin-bottom: 10px;
@@ -1226,6 +1251,14 @@ footer {
  #contact-area form {
    margin-left: 10%;
    margin-right: 10%;
+ }
+
+ .back-btn-proto {
+   top: 40px;
+   left: 40px;
+   width: 350px;
+   height: 140px;
+   font-size: 24px;
  }
 }
 
