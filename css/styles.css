@@ -511,44 +511,49 @@ body{
   background: url(../img/portfolio/compagnie/compagnie.gif);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
 }
 .header-4{
   background: url(../img/portfolio/django/django.gif);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
 }
 .header-5{
-  background: url(../img/portfolio/synaps-t/presentation.gif);
+  background: url(../img/portfolio/mollat/mollat.gif);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
 }
 .header-6{
-  background: url(../img/portfolio/synaps-t/presentation.gif);
+  background: url(../img/portfolio/kino/kino.gif);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
 }
 .scroll-btn-modal {
   margin-top: 40%;
 }
+
 .cd-modal h5, .cd-modal h6 {
   text-align: center;
   margin: 0;
   padding: 0;
 }
 .cd-modal h5 {
-  font-size: 64px;
+  font-size: 56px;
   font-weight: 700;
   margin-top: 100px;
+  letter-spacing: 2px;
   opacity: .9;
+  margin-bottom: 15px;
 }
 .cd-modal h6 {
   font-size: 18px;
   font-weight: 300;
   opacity: .6;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
 }
 .cd-modal p {
   margin: 20px auto 50px auto;
@@ -687,6 +692,7 @@ body{
 
 .p-before-invision-link {
   margin-top: 75px!important;
+  border-top: 2px solid rgba(29,32,62,0.2);
 }
 .invision-link {
   max-width: 900px;
@@ -721,6 +727,24 @@ body{
   padding-top: 10px;
   margin: 0 auto;
   font-size: 16px;
+}
+
+.container-img-kino {
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-flow: wrap;
+  margin: 0 auto;
+}
+
+.container-img-kino img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 40px;
 }
 
 .back-btn-proto {
@@ -1161,16 +1185,53 @@ footer {
   header {
     display: none;
   }
-
+  .bg-img{
+    display: none;
+  }
   #prez {
     height: 100%;
   }
 
+  .text-presentation-bg img {
+    margin-top: 60px;
+  }
+
+  .text-presentation-bg h2 {
+    margin-top: 40px;
+  }
+
+  .text-presentation-bg p {
+  margin-top: 40px!important;
+}
+
   #portfolio {
     height: 100%;
   }
-  .scroll-btn-modal {
-    margin-top: 90%;
+  .portfolio::after {
+    top:-90px;
+  }
+  .portfolio h4 {
+    padding-top: 100px;
+  }
+  .header-modal{
+    display: none;
+  }
+  .cd-modal h5 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 30px!important;
+  }
+  .cd-modal .infos-project div p:first-child {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: .5px;
+    opacity: .9;
+  }
+  .cd-modal .infos-project div p:last-child,
+  .cd-modal .infos-project div img,
+  .cd-modal .infos-project div a{
+    margin-bottom: 20px;
   }
   .modal-padding {
     padding-left: 10%;
@@ -1186,6 +1247,10 @@ footer {
   .text-presentation-bg h2 {
     text-align: center;
     font-size: 32px;
+  }
+  .text-presentation,
+  .text-presentation-bg{
+    margin-bottom: 0!important;
   }
  .icon-container {
    margin-bottom: 20px;
@@ -1250,25 +1315,15 @@ footer {
   flex-direction: column;
  }
 
- .header-1,
- .header-2,
- .header-3,
- .header-4,
- .header-5,
- .header-6 {
-   background-position: center;
- }
-
-
  .cd-modal .infos-project {
    justify-content: center;
    flex-flow: row wrap;
    flex-direction: column;
  }
 
- .modal-padding h5 {
+ /*.modal-padding h5 {
     font-size: 32px;
-  }
+  }*/
 
  .date-project{
    margin-bottom: 10px;
@@ -1280,9 +1335,8 @@ footer {
  }
 
 
- #contact-area form {
-   margin-left: 10%;
-   margin-right: 10%;
+ .icon-github {
+   display: none!important;
  }
 
 }
@@ -1292,8 +1346,5 @@ footer {
   .portfolio h4, {
     font-size: 48px;
     margin-bottom: 50px;
-  }
-  .scroll-btn-modal {
-    margin-top: 120%;
   }
 }
